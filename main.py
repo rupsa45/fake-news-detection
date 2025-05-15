@@ -28,12 +28,12 @@ def clean_text(text):
     return ' '.join(text)
 
 # Root route
-@app.get("/")
-def read_root():
-    return {"message": "Fake News Detection API is running"}
+# @app.get("/")
+# def read_root():
+#     return {"message": "Fake News Detection API is running"}
 
 # Prediction endpoint
-@app.post("/predict/")
+@app.post("/")
 def predict_news(data: NewsInput):
     cleaned = clean_text(data.text)
     vectorized = vectorizer.transform([cleaned])
