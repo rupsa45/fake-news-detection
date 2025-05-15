@@ -1,0 +1,23 @@
+# Ignore Python cache files
+__pycache__/
+*.py[cod]
+*.pyo
+
+# Ignore virtual environment
+.venv/
+env/
+venv/
+
+# Ignore model files (optional – they're large)
+fake_news_model.pkl
+tfidf_vectorizer.pkl
+
+# Ignore Jupyter notebooks (optional)
+*.ipynb
+
+# Ignore data files (if large or sensitive)
+data/
+*.csv
+
+# VS Code settings (optional)
+.vscode/
