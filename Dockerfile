@@ -11,6 +11,9 @@ COPY . .
 RUN pip install --upgrade pip
 RUN pip install -r requirements.txt
 
+# Run the training script to create model files
+RUN python train_model.py
+
 # Expose port (important for Railway)
 EXPOSE 8000
 
