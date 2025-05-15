@@ -9,8 +9,8 @@ env/
 venv/
 
 # Ignore model files (optional – they're large)
-fake_news_model.pkl
-tfidf_vectorizer.pkl
+# fake_news_model.pkl
+# tfidf_vectorizer.pkl
 
 # Ignore Jupyter notebooks (optional)
 *.ipynb
